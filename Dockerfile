@@ -41,4 +41,7 @@ USER nobody
 
 ENTRYPOINT ["dnscrypt-proxy", "-config", "/config/dnscrypt-proxy.toml"]
 
+EXPOSE 5053/tcp
+EXPOSE 5053/udp
+
 RUN ["dnscrypt-proxy", "-version"]
